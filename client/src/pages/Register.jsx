@@ -19,7 +19,7 @@ function Register() {
       createUserWithEmailAndPassword(database, email, password)
         .then((data) => {
           console.log(data, "authData");
-          history("/subsciption");
+          history("/subscription");
         })
         .catch((err) => {
           alert(err.code);
@@ -29,7 +29,7 @@ function Register() {
       signInWithEmailAndPassword(database, email, password)
         .then((data) => {
           console.log(data, "authData");
-          history("/subsciption");
+          history("/subscription");
         })
         .catch((err) => {
           alert(err.code);
